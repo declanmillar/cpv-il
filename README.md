@@ -1,6 +1,7 @@
 # Plan Arithmetic: Compositional Plan Vectors for Multi-Task Control
 
 [Original repository](https://github.com/cdevin/cpv)
+
 [Original project webpage](https://sites.google.com/berkeley.edu/compositionalplanvectors/home)
 
 To install: clone the repository and run
@@ -12,7 +13,7 @@ poetry install
 Add the repo to you pythonpath by running
 
 ```sh
-export PYTHONPATH=[path/to/repo/]cpv-il/crafting:\$PYTHONPATH
+export PYTHONPATH=[path/to/repo/]cpv-il/crafting:$PYTHONPATH
 ```
 
 To generate training data for the crafting environment, run
