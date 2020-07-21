@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "crafting"
+version = "0.1.0"
+description = ""
+authors = ["Declan Millar <declan.millar@ibm.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+backcall = "0.1.0"
+bleach = "3.0.2"
+boto3 = "1.9.113"
+botocore = "1.12.113"
+certifi = "2018.8.24"
+chardet = "3.0.4"
+cloudpickle = "0.5.2"
+cycler = "0.10.0"
+Cython = "0.28.5"
+decorator = "4.3.0"
+defusedxml = "0.5.0"
+docutils = "0.14"
+entrypoints = "0.2.3"
+future = "0.17.1"
+gitdb2 = "2.0.5"
+GitPython = "2.1.7"
+glfw = "1.7.0"
+gtimer = "1.0.0b5"
+gym = "0.10.5"
+idna = "2.7"
+imageio = "2.4.1"
+ipdb = "0.11"
+jedi = "0.12.1"
+Jinja2 = "2.10"
+jmespath = "0.9.4"
+joblib = "0.9.4"
+jsonschema = "2.6.0"
+lockfile = "0.12.2"
+Mako = "1.0.6"
+markupsafe = "^1.1.1"
+numpy = "^1.19.0"
+opencv-python = "^4.3.0"
+scipy = "^1.5.1"
+pillow = "^7.2.0"
+torch = "^1.5.1"
+torchvision = "^0.6.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
