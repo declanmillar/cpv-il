@@ -1,15 +1,11 @@
+import sys
+import copy
 import numpy as np
+from six import StringIO, b
 
 from gym import Env, spaces
 from gym.utils import seeding
-
-import sys
-from six import StringIO, b
-import copy
 from gym import utils
-from gym.envs.toy_text import discrete
-
-# from scipy.misc import imresize
 
 
 RENDER_DIR = "renderings/"
@@ -554,7 +550,7 @@ class HammerWorld(Env):
             img = np.zeros(((self.nrow + 1) * self.pretty_render_res, self.ncol * self.pretty_render_res, 3)).astype(
                 np.uint8
             )
-            grass = (self.pretty_render_sprites["grass2"] / 3).astype(np.uint8)
+            grass = (self.pretty_render_sprites["grass"] / 3).astype(np.uint8)
             for row in range(self.nrow):
                 for col in range(self.ncol):
                     img[
