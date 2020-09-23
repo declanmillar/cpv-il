@@ -1,0 +1,9 @@
+name: cpv
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7.3
+  - pip
+  - pip:
+    - gym
+    - six
