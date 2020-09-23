@@ -7,3 +7,6 @@ dependencies:
   - pip:
     - gym
     - six
+    - torch
+    - torchvision
+    - tensorboardX
