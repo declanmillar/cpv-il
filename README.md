@@ -1,6 +1,6 @@
 # Plan Arithmetic: Compositional Plan Vectors for Multi-Task Control
 
-This project is a [fork](https://github.com/cdevin/cpv) of the [project](https://sites.google.com/berkeley.edu/compositionalplanvectors/home)Devin et al. on learning compositional plan vectors using imitation learning. Our goal is extend there approach to pure [reinforcement learning](https://github.com/lauradarcy/CPV_RL). We aim to use this repository both a benchmark by adapting it to use a standardized version of the original [environment](https://github.com/lauradarcy/gym-craftingworld) and to test improvements to learning speed using HPC.
+This project is a [fork](https://github.com/cdevin/cpv) of the [project](https://sites.google.com/berkeley.edu/compositionalplanvectors/home) by Devin et al. on learning compositional plan vectors using imitation learning. Our goal is extend there approach to pure [reinforcement learning](https://github.com/lauradarcy/CPV_RL). We aim to use this repository both a benchmark by adapting it to use a standardized version of the original [environment](https://github.com/lauradarcy/gym-craftingworld) and to test improvements to learning speed using HPC.
 
 ## Usage
 
