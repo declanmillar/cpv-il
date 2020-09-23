@@ -4,6 +4,18 @@ This project is a [fork](https://github.com/cdevin/cpv) of the [project](https:/
 
 ## Usage
 
+Create teh virtual environment
+
+```sh
+conda env create --file environment.yml
+```
+
+Activate it
+
+```sh
+conda activate cpv
+```
+
 Add the repo to you pythonpath by running
 
 ```sh
@@ -21,13 +33,13 @@ This may take a while.
 Then, collect the evaluation trajectories by running
 
 ```sh
-poetry run python crafting/scripts/collect_reference_trajectories.py
+python crafting/scripts/collect_reference_trajectories.py
 ```
 
 To train a CPV-Full model, run
 
 ```sh
-poetry run python crafting/gridworld/algorithms/cpv_experiment.py -H -P
+python crafting/gridworld/algorithms/cpv_experiment.py -H -P
 ```
 
 This script will print where the checkpoints are saved and where the tensorboard logs are saved.
@@ -35,5 +47,5 @@ This script will print where the checkpoints are saved and where the tensorboard
 To evaluate the model online, run
 
 ```sh
-poetry run python crafting/scripts/run_model_multitask_tensorboard.py --model [path/to/checkpoints_dir] --tb [path/to/tensorboard_dir] --type V3
+python crafting/scripts/run_model_multitask_tensorboard.py --model [path/to/checkpoints_dir] --tb [path/to/tensorboard_dir] --type V3
 ```
