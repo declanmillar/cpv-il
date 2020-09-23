@@ -10,3 +10,5 @@ dependencies:
     - torch
     - torchvision
     - tensorboardX
+    - black
+    - natsort
