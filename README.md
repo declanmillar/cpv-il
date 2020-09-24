@@ -4,7 +4,7 @@ This project is a [fork](https://github.com/cdevin/cpv) of the [project](https:/
 
 ## Usage
 
-Create teh virtual environment
+Create the virtual environment
 
 ```sh
 conda env create --file environment.yml
@@ -47,5 +47,5 @@ This script will print where the checkpoints are saved and where the tensorboard
 To evaluate the model online, run
 
 ```sh
-python crafting/scripts/run_model_multitask_tensorboard.py --model [path/to/checkpoints_dir] --tb [path/to/tensorboard_dir] --type V3
+python crafting/scripts/run_model_multitask_tensorboard.py --model [path/to/checkpoints_dir/] --tb [path/to/tensorboard_dir] --type V3
 ```
