@@ -12,3 +12,4 @@ dependencies:
     - tensorboardX
     - black
     - natsort
+    - opencv-python
