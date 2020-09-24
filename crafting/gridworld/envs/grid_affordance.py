@@ -1,7 +1,8 @@
-import sys
 import copy
 import numpy as np
-from six import StringIO, b
+import glob
+import os
+import cv2
 
 from gym import Env, spaces
 from gym.utils import seeding
@@ -75,9 +76,7 @@ print("SUM OF PROB", sum(OBJECT_PROBS))
 
 
 class HammerWorld(Env):
-    """
-
-    """
+    """"""
 
     metadata = {"render.modes": ["rgb", "ansi"]}
 
@@ -156,14 +155,10 @@ class HammerWorld(Env):
         self.SPRITES = SPRITES
 
         if pretty_renderable:
-            import os
-
             self.pretty_render_res = 30
             self.render_order = ["house", "tree", "rock", "sticks", "wheat", "hammer", "axe", "bread", "agent"]
             asset_path = "/".join(os.path.realpath(__file__).split("/")[:-1] + ["assets/*.png"])
             print("asset_path", asset_path)
-            import glob
-            import cv2
 
             asset_paths = glob.glob(asset_path)
 
@@ -511,8 +506,6 @@ class HammerWorld(Env):
         return new_obs
 
     def render(self, mode="rgb"):
-        import cv2
-
         if mode == "rgb":
             img = np.zeros(((self.nrow + 1) * self.renderres, self.ncol * self.renderres, 3))
             to_get_obs = self.state["object_positions"].keys()
@@ -544,8 +537,6 @@ class HammerWorld(Env):
             cv2.imwrite(RENDER_DIR + "img{:04d}_{:04d}.png".format(self.episode, self.state["count"]), img * 255)
 
     def pretty_render(self, mode="rgb"):
-        import cv2
-
         if mode == "rgb":
             img = np.zeros(((self.nrow + 1) * self.pretty_render_res, self.ncol * self.pretty_render_res, 3)).astype(
                 np.uint8
@@ -638,4 +629,3 @@ class HammerWorld(Env):
         lengths = [p["env_infos"][-1]["count"] for p in paths]
         length_rate = sum(lengths) / len(lengths)
         return {"SuccessRate": success_rate, "PathLengthMean": length_rate, "PathLengthMin": min(lengths)}
-

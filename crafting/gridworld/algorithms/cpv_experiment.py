@@ -2,6 +2,8 @@ import time
 import argparse
 import os
 import torch
+import numpy as np
+
 from tensorboardX import SummaryWriter
 from gridworld.algorithms.composite_dataset import CompositeDataset
 from gridworld.algorithms.composite_models import CompositeDotModelV3

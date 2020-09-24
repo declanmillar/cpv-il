@@ -1,24 +1,12 @@
-import numpy as np
-import math
-import random
-
 import torch
-import glob
 
-# from skimage import io, transform
-import cv2
-from torchvision import transforms, utils
-from gridworld.envs.grid_affordance import HammerWorld, ACTIONS
+# from torchvision import transforms, utils
 
-import copy
-from torch.nn import functional as F
-from gridworld.algorithms.composite_dataset import ActionToTensor, StateActionToTensor
+from gridworld.algorithms.composite_dataset import ActionToTensor
 
 
 class LearnedBCPolicy:
-    """
-
-    """
+    """"""
 
     def __init__(
         self,
