@@ -6,6 +6,7 @@ dependencies:
   - pip
   - pip:
     - gym
+    - gym-craftingworld
     - six
     - torch
     - torchvision
@@ -13,3 +14,4 @@ dependencies:
     - black
     - natsort
     - opencv-python
+    - pillow
